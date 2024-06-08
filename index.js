@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const cors = require('cors')
 
 const imagesLinks = require('./assets/imageLinks').imagesLinks;
 
@@ -63,6 +64,7 @@ express()
     `;
     res.send(htmlContent);
   })
+  .use(cors())
   .use(express.json())
   .post('/getSSR', (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
