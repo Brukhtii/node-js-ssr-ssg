@@ -18,7 +18,7 @@ const getComponentsBlock = ({ componentsQty }) => {
       <div class="item-details">
         <h3 class="item-title">Item Title: ${index + 1}</h3>
         <p class="item-description">This is a brief description of the item, highlighting its key features and benefits.</p>
-        <Link to="https://hidden-refuge-97632-934ef58eadcb.herokuapp.com">More info ...</Link>
+        <a href="https://hidden-refuge-97632-934ef58eadcb.herokuapp.com">More info ...</a>
         <div class="item-meta">
           <span class="item-price">$19.99</span>
           <span class="item-rating">Rating: ★★★★☆</span>
