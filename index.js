@@ -28,7 +28,7 @@ const getComponentsBlock = ({ componentsQty }) => {
 
     const getComponents = () => {
       const arrayWithObjects = Array.from({ length: componentsQty }, (_, index) => (getComponent(index)));
-      return arrayWithObjects;
+      return arrayWithObjects.join('');
     }
 
   return (
