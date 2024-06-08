@@ -32,11 +32,9 @@ const getComponentsBlock = ({ componentsQty }) => {
     }
 
   return (
-      `<div class="components-block">
-      <h1 class="font-weight-light components-qty">Components quantity: ${componentsQty}</h1>
-        <div id="components" class="components">
-          ${getComponents()}
-        </div>
+      `<h1 class="font-weight-light components-qty">Components quantity: ${componentsQty}</h1>
+      <div id="components" class="components">
+        ${getComponents()}
       </div>`
   );
 };
